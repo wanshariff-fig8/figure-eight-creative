@@ -12,9 +12,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Figure 8 Studio - Coming Soon</title>
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Prevent HTML caching -->
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <!-- Cache-busted styles -->
+  <link rel="stylesheet" href="styles.css?v=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/wwm2hse.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico?v=1.0" type="image/x-icon" />
 
   <style>
     body {
@@ -76,22 +81,13 @@
         transform: scale(1) rotate(360deg);
       }
     }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
   </style>
 </head>
 <body>
   <!-- Loader Section -->
   <div id="loader">
     <iframe 
-      src="https://lottie.host/embed/f56d17e2-53ef-4e86-a39c-1de35f751018/oVvbovEamf.lottie" 
+      src="https://lottie.host/embed/f56d17e2-53ef-4e86-a39c-1de35f751018/oVvbovEamf.lottie?v=1.0" 
       style="border: none; width: 300px; height: 300px; display: block; margin: auto;"
       id="lottie-iframe">
     </iframe>
@@ -99,14 +95,14 @@
 
   <!-- Main Content Section -->
   <div class="container">
-    <img src="img/Logo-circle.png" alt="Figure Eight Creatives Logo" class="logo">
+    <img src="img/Logo-circle.png?v=1.0" alt="Figure Eight Creatives Logo" class="logo">
     <h1>Coming Soon</h1>
     <p>Figure Eight Studio is crafting timeless, elegant designs that make a statement.<br> Stay tuned for more updates!</p>
   </div>
 
   <script>
     // Define animation duration
-    const ANIMATION_DURATION = 5000; // Adjust to match animation duration in milliseconds
+    const ANIMATION_DURATION = 5500; // Adjust to match animation duration in milliseconds
 
     // Hide loader after the animation completes
     function hideLoader() {
